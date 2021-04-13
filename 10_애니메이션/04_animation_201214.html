@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>04_animation</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            margin-bottom: 30px;
+        }
+        
+        /*ANIMATION1*/
+        .div1 {
+            background-color: goldenrod;
+            animation-name: change;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes change {
+            from {
+                background-color: aqua;
+            }
+            to {
+                background-color: pink;
+                border-radius: 50%;
+            }
+        }
+        
+        /*ANIMATION2*/
+        .div2 {
+            background-color: greenyellow;
+            position: relative;
+            animation-name: move;
+            animation-duration: 4s;
+        }
+        .div3 {
+            background-color: lightcoral;
+            position: relative;
+            animation-name: move;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        
+        @keyframes move {
+            0% {
+                background-color: red;
+                left: 0;
+                top: 0;
+            }
+            25% {
+                background-color: darkorange;
+                left: 200px;
+                top: 0;
+            }
+            50% {
+                background-color: yellow;
+                left: 200px;
+                top: 200px;
+            }
+            75% {
+                background-color: darkseagreen;
+                left: 0;
+                top: 200px;
+            }
+            100% {
+                background-color: dodgerblue;
+                left: 0;
+                top: 0;
+            }
+        }
+        
+        /*ANIMATION3*/
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: orangered;
+            color: white;
+            position: relative;
+            animation: timing 5s infinite alternate;
+            /*animation: name duration iteration-count direction;*/
+        }
+        .linear {
+            animation-timing-function: linear;
+        }
+        .ease {
+            animation-timing-function: ease;
+        }
+        .ease-in {
+            animation-timing-function: ease-in;
+        }
+        .ease-out {
+            animation-timing-function: ease-out;
+        }
+        .ease-in-out {
+            animation-timing-function: ease-in-out;
+        }
+    
+        @keyframes timing {
+            0% {left: 0;}
+            100% {left: 500px;}
+        }
+    
+    
+    </style>
+</head>
+<body>
+   <!--ANIMATION1-->
+   <div class="div1"></div>
+   
+   <!--ANIMATION2-->
+   <div class="div2"></div>
+   <div class="div3"></div>
+   
+   <!--ANIMATION3-->
+   <h1>timing</h1>
+   <div class="box linear">일정한 속도</div>
+   <div class="box ease">시작과 종료 부드럽게</div>
+   <div class="box ease-in">서서히 시작</div>
+   <div class="box ease-out">서서히 종료</div>
+   <div class="box ease-in-out">서서히 시작해서 서서히 종료</div>
+   
+   
+   
+   
+    
+</body>
+</html>

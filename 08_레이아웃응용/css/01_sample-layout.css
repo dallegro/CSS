@@ -1,0 +1,63 @@
+@charset 'utf-8';
+
+/*RESET*/
+    * {
+        margin: 0;
+        padding: 0;
+}
+
+ul,ol,li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*MAIN css*/
+
+body {
+    text-align: center;
+}
+header {
+    width: 100%;
+    height: 100px;
+    background-color: red;
+    position: fixed;
+    top: 0;
+}
+.main-1 {
+    
+    margin-top: 100px;
+    width: 100%;
+    height: 800px;
+    background-color: yellow;
+}
+.main-2 {
+}
+.main-2 .con-box {
+    float: left;
+    width: 33.33%;
+    height: 500px;
+}
+.main-2 .con-box:first-child {
+    background-color: darksalmon;
+}
+.main-2 .con-box:nth-child(2) {
+    background-color: skyblue;
+}
+.main-2 .con-box:last-child {
+    background-color: darkseagreen;
+}
+footer {
+    width: 100%;;
+}
+footer p:first-child{
+    height: 30px;
+    clear: both;
+    background-color: dimgrey;
+}
+footer p:last-child {
+    background-color: darkslateblue;
+    height: 50px;
+}

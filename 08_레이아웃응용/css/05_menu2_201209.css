@@ -1,0 +1,130 @@
+@charset 'utf-8';
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/*main*/
+header {
+    width: 90%;
+    margin: 0 auto;
+    /*background-color: aquamarine;*/
+    height: 80px;
+}
+header .logo {
+    width: 20%;
+    color: darkred;
+    font-weight: bold;
+    line-height: 80px;
+    float: left;
+    text-align: center;
+}
+header nav {
+    width: 70%;
+    float: right;
+}
+header nav ul li {
+    float: left;
+    width: 12.5%;
+    line-height: 80px;
+    text-align: center;
+}
+header nav ul li a {
+    color: black;
+}
+header nav ul li a:hover {
+    color: red;
+    font-weight: bold;
+}
+
+.main {
+    width: 90%;
+    height: 400px;
+    background-color: #fed136;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.wrap {
+    width: 90%;
+    background-color: #eee;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.wrap h2 {
+    padding: 20px 0;
+    text-align: center;
+}
+.wrap .con-wrap {
+    padding: 14px;
+    overflow: hidden;
+}
+.wrap .con-wrap .con1 {
+    width: 20%;
+    height: 200px;
+    background-color: cadetblue;
+    float: left;
+}
+.wrap .con-wrap .con2 {
+    width: 56%;
+    height: 200px;
+    background-color: lightpink;
+    float: left;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.wrap .con-wrap .con3 {
+    width: 20%;
+    height: 200px;
+    background-color: burlywood;
+    float: left;
+}
+.banner {
+    width: 90%;
+    height: 120px;
+    background-color: deepskyblue;
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+footer {
+    width: 100%;
+    height: 140px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+}
+footer .footer-wrap {
+    width: 90%;
+    margin: 0 auto;
+    line-height: 140px;
+}
+footer .footer-wrap .footer-logo {
+    width: 20%;
+    float: left;
+}
+footer .footer-wrap ul {
+    width: 50%;
+    float: right;
+}
+footer .footer-wrap ul li {
+    display: inline-block;
+    width: 15%;
+    text-align: right;
+}
+footer .footer-wrap ul li a {
+    color: white;
+}
+
+
+
+
+

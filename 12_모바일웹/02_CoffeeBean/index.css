@@ -1,0 +1,222 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*구글 웹폰트
+font-family: 'Nanum Gothic', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+*/
+
+/*//.RESET*/
+
+header {
+    width: 90%;
+    margin: 0 auto;
+    height: 60px;
+    position: relative;
+}
+
+header > a {
+    line-height: 70px;
+
+    width: 33.33%;
+    position: absolute;
+    left: 0;
+    /*    outline: 3px solid pink;*/
+}
+
+header > a > img {
+    /*    outline: 3px solid green;*/
+}
+
+header > h2 {
+    text-align: center;
+    line-height: 80px;
+    width: 33.33%;
+    position: absolute;
+    left: 50%;
+    margin-left: -16.66%;
+    /*    outline: 3px solid pink;*/
+}
+
+header > h2 > a > img {
+    height: 40px;
+}
+
+header > div {
+    height: 100%;
+    /*    outline: 3px solid pink;*/
+    width: 33.33%;
+    position: absolute;
+
+    text-align: right;
+    right: 0;
+}
+
+header > div > a {
+    margin-left: 20%;
+    line-height: 70px;
+    /*    outline: 3px solid red;*/
+}
+
+header > div > a > img {
+    width: 25px;
+}
+
+/*.//HEADER*/
+
+
+
+/*SECTION*/
+section {
+    width: 100%;
+    text-align: center;
+}
+
+section .main {
+    width: 100%;
+    height: 650px;
+}
+
+section .main a {
+    height: 100%;
+    display: block;
+    background: url(images/m-main.jpg)no-repeat center/contain;
+    text-indent: -9999px;
+}
+
+section .banner {
+    margin-top: -5px;
+    width: 100%;
+    height: 230px;
+}
+
+section .banner a {
+    height: 100%;
+    display: block;
+    background: url(images/m-banner.jpg)no-repeat center/contain;
+    text-indent: -9999px;
+}
+
+section .MD {
+    margin: 40px auto;
+    width: 90%;
+
+}
+
+section .MD h2 {
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    color: rgb(207, 102, 26);
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 1.4em;
+    margin-bottom: 40px;
+
+
+}
+
+section .MD .product {
+    width: 100%;
+
+}
+
+section .MD .product ul li {
+    float: left;
+    width: 50%;
+
+    margin-bottom: 40px;
+}
+
+section .MD .product ul li a {}
+
+section .MD .product ul li a img {}
+
+section .MD .product > ul > li > .name {
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+section .MD .product > ul > li > p:last-child {
+    color: rgb(207, 102, 26);
+    font-weight: bold;
+    line-height: 40px;
+}
+
+section .MD.pager {
+    width: 100%;
+    text-align: center;
+}
+
+section .MD .pager li {
+    display: inline-block;
+}
+
+section .MD .pager li span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #cdcdcd;
+    border-radius: 50%;
+}
+
+section .new{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+section .new h2 {
+    margin-bottom: 20px;
+    font-size: 1.4em;
+    text-align: center;
+    font-family: 'Nanum Myeongjo', serif;
+    color: rgb(207, 102, 26);
+    font-weight: 900;
+    text-transform: uppercase;
+}
+section .new ul li {
+        width: 100%;
+    
+    
+}
+section .new ul li a img{
+    width: 300px;
+}
+section .new ul li p {
+    font-weight: bold;
+    
+    font-family: 'Nanum Myeongjo', serif;
+    color: rgb(207, 102, 26);
+}
+section .new .pager {
+    width: 100%;
+    text-align: center;
+    bottom: 20px;
+}
+
+section .new .pager li {
+    display: inline-block;
+}
+
+section .new .pager li span {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background-color: #cdcdcd;
+    border-radius: 50%;
+}

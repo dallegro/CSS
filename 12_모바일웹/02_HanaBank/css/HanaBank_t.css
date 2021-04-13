@@ -1,0 +1,537 @@
+@charset 'utf-8';
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*HEADER*/
+body {
+    width: 100%;
+    min-width: 320px;
+    /*320아래로는 구현X*/
+    background-color: #fff;
+    word-wrap: break-word;
+    /*단어를 감싸주는 것들의 속성 / */
+    word-break: break-all;
+}
+
+#pop_wrap header {
+    background-color: #006b76;
+}
+
+#pop_wrap header .top {
+    padding: 3px 10px 5px;
+}
+
+#pop_wrap header .top a {
+    display: block;
+    width: 38px;
+    padding: 25px 0 0;
+    font-size: 8px;
+    letter-spacing: -1px;
+    text-align: center;
+    color: #99cac8;
+    background-color: yellow;
+    background-size: 22px auto !important;
+    /*가장 중요하게 먼저 적용!*/
+
+}
+
+#pop_wrap header .top ul {
+    float: left;
+}
+
+#pop_wrap header .top ul li {
+    float: left;
+    padding-right: 4px;
+}
+
+#pop_wrap header .top ul li:nth-child(1) a {
+    background: url(../images/ico_logout.png) no-repeat center 7px;
+    /*    background-size: 22px auto;*/
+
+}
+
+#pop_wrap header .top ul li:nth-child(2) a {
+    background: url(../images/ico_setting.png) no-repeat center 3px;
+    /*    background-size: 22px auto;*/
+
+}
+
+#pop_wrap header .top ul li:nth-child(3) a {
+    background: url(../images/ico_menu.png) no-repeat center 4px;
+    /*    background-size: 22px auto;*/
+
+}
+
+#pop_wrap header .top > a {
+    float: right;
+    background: url(../images/ico_close.png)no-repeat center 4px;
+}
+
+#pop_wrap header .btm li {
+    width: 50%;
+    float: left;
+    border-left: 1px solid #004f58;
+    border-top: 1px solid #004f58;
+    box-sizing: border-box;
+}
+
+#pop_wrap header .btm li:nth-child(odd) {
+    border-left: none;
+}
+
+#pop_wrap header .btm li a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+#pop_wrap .fav_menu {
+    padding: 25px 0;
+    text-align: center;
+    box-shadow: 0 1px 2px #dadcdc;
+}
+
+#pop_wrap .fav_menu h2 {
+    padding-bottom: 14px;
+    font-size: 16px;
+    color: #333;
+}
+
+#pop_wrap .fav_menu p {
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+#pop_wrap .fav_menu div {
+    padding-top: 15px;
+}
+
+#pop_wrap .fav_menu div a {
+    margin: 0 2.5px;
+}
+
+#pop_wrap .nav_list {
+    /*    padding: 40px 30px;*/
+    padding: 40px 40px 40px 30px;
+    background-color: #edefef;
+}
+
+#pop_wrap .nav_list li {
+    float: left;
+    padding: 0 0 20px 10px;
+}
+
+#pop_wrap .nav_list li a {
+    display: table;
+    width: 78px;
+    height: 74px;
+    border: 1px solid #bcbcbc;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+#pop_wrap .nav_list li a span {
+    display: table-cell;
+    text-align: center;
+    font-size: 14px;
+    vertical-align: middle;
+    /*위아래 정렬/인라인요소에서는 잘먹는데 블럭요소에서는 잘 안먹힘*/
+
+}
+
+/**버튼 CSS**/
+.btn1 {
+    min-width: 120px;
+    display: inline-block;
+    padding: 0 20px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #636e6f;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 100px;
+    box-sizing: border-box;
+}
+
+.btn2 {
+    min-width: 120px;
+    /*미니멈의 약자- 최소의 너비를 이만큼은 가져가~ .반응형을 할때 알아야함*/
+
+    display: inline-block;
+    padding: 0 20px;
+    height: 38px;
+    line-height: 38px;
+    background-color: #F73880;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 100px;
+    box-sizing: border-box;
+
+}
+
+/*-----sub2.html------*/
+#wrap header {
+    height: 50px;
+    background: #006b76;
+    position: relative;
+}
+
+#wrap header h1 {
+    text-align: center;
+    padding: 10px 0 0;
+}
+
+#wrap header h1 img {
+    width: 110px;
+}
+
+#wrap header .left {
+    position: absolute;
+    left: 15px;
+    top: 7px;
+}
+
+#wrap header .right {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+}
+
+#wrap header .btn {
+    display: inline-block;
+    padding: 24px 0 0;
+    text-align: center;
+    color: #b3d3d6;
+    font-size: 10px;
+    background-size: 20px auto !important;
+}
+
+#wrap header .prev {
+    background: url(../images/ico_arrow.png) no-repeat center 0;
+}
+
+#wrap header .total {
+    background: url(../images/ico_menu2.png) no-repeat center 2px;
+}
+
+main > h2 {
+    height: 30px;
+    line-height: 30px;
+    background: #ececec;
+    text-align: center;
+    font-size: 14px;
+    color: #444;
+}
+
+.call_list {
+    padding: 13px;
+    background: #1abc9c;
+}
+
+.call_list li:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.call_list li {
+    margin-bottom: 4px;
+    border: 1px solid #fff;
+    padding: 7px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+.call_list li .left {
+    float: left;
+    color: #fff;
+}
+
+.call_list li .left strong {
+    display: block;
+    /*    font-size: 12px;*/
+}
+
+.call_list li .right {
+    float: right;
+}
+
+/*버튼 CSS*/
+
+.btn3,
+.btn4 {
+    display: inline-block;
+    padding: 0 8px;
+    box-sizing: border-box;
+    min-width: 58px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.btn3 {
+    background: #117e88;
+}
+
+.btn4 {
+    background: #3f6080;
+}
+
+
+.call_list > p {
+    padding: 5px 0 10px;
+    border-bottom: 1px solid #fff;
+    font-size: 12px;
+    color: #fff;
+
+}
+
+.call_list > div {
+    padding: 10px 0 8px;
+    text-align: center;
+    color: #fff;
+    font-size: 12px;
+}
+
+.call_list > div span,
+.call_list > div span a {
+    color: #86ffff;
+}
+
+.reservation {
+    padding: 10px 12px;
+    background: #33475b;
+}
+
+
+.reservation h2 {
+    height: 22px;
+    line-height: 22px;
+    background: url(../images/ico_clock.png)no-repeat 0 0;
+    background-size: auto 20px;
+    text-indent: 24px;
+    font-size: 14px;
+    color: #1abc9c;
+}
+
+.reservation ul {
+    padding: 10px 0 0;
+
+}
+
+.reservation ul li {
+    width: 50%;
+    float: left;
+    padding: 0 3px;
+    box-sizing: border-box;
+}
+
+.reservation ul li a {
+    display: block;
+}
+
+.btn5 {
+    display: inline-block;
+    height: 38px;
+    line-height: 38px;
+    background: #3f6080;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    text-align: center;
+    font-size: 12px;
+}
+
+/*sub3.html*/
+.h2 {
+    padding: 1.5px;
+    0 0;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: #fff;
+    background: #006b76;
+    font-size: 14px;
+}
+
+.tab ul {
+    background: #00565e;
+    display: flex;
+    /*    부모요소에게*/
+}
+
+.tab ul li {
+    flex: 1;
+    /*1:1:1로 배치*/
+}
+
+.tab ul li a {
+    display: block;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    color: #7faaae;
+}
+
+.tab ul li a.on {
+    border-bottom: 3px solid #00cacb;
+    color: #fff;
+    box-sizing: border-box;
+}
+
+#contents {
+    padding: 13px 10px;
+    background: #edefef;
+}
+
+.certification {
+    border: 1px solid #c2c2c4;
+    padding: 14px;
+    margin-bottom: 5px;
+    border-radius: 20px;
+    background: #fff;
+    position: relative;
+}
+
+.certification h3.title {
+    padding: 0 0 12px 10px;
+    font-size: 16px;
+    color: #333;
+}
+
+.certification h3.title:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 100%;
+    border-bottom: 2px solid #00a1a1;
+
+}
+
+.certification h3.title:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 40px;
+    width: 24px;
+    border-bottom: 2px solid #f61c6e;
+    z-index: 9;
+}
+
+.certification .login {
+    display: flex;
+    padding: 18px 0 22px;
+}
+
+.certification .login > div {
+    flex: 1;
+    height: 85px;
+    text-align: center;
+    font-size: 14px;
+/*    background: yellow;*/
+    position: relative;
+    font-weight: 600;
+    
+
+}
+.certification .login > div:first-child {
+    border-right: 1px solid #cbcbcb;
+}
+.certification .list {
+    padding: 10px;
+    background: #f7f7f8;
+    border-top: 1px solid #e4e5e7;
+    border-bottom: 
+        1px solid #e4e5e7;
+}
+.certification .list>ul>li {
+    padding: 0 0 3px 15px;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #333;
+    text-indent: -14px;
+}
+
+.certification .list>ul>li>ul>li{
+    padding: 0 0 3px;
+    text-indent: 0;
+}
+.certification .list a{
+    width: 130px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 12px;
+    display: block;
+    background: #edefef;
+    border: 1px solid #c2c3c4;
+    text-align: center;
+    letter-spacing: -1px;
+    margin: 12px auto 10px;
+    border-radius: 50px;
+    color: #333;
+}
+.certification .login > div a {
+    position: absolute;
+    width: 82px;
+    height: 32px;
+    line-height: 32px;
+    border-radius: 50px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    color: #fff;
+    font-size: 12px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    text-align: center;
+/*    border: 1px solid #000;*/
+}
+.certification .login > div:first-child a{
+    background-color: #f73880;
+}
+.certification .login > div:last-child a{
+    background-color: #636e6f;
+}
+.certification h3.title2 {
+    color: #f50f66;
+    padding: 0 0 10px 10px;
+    font-size: 16px;
+}
+.certification p{
+    padding: 0 0 10px 10px;
+    font-size: 14px;
+    color: #4e4e4e;
+    line-height: 1.4;
+    letter-spacing: -0.6px;
+    
+}

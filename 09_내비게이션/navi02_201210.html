@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>navigation02</title>
+    
+    <!--구글웹폰트-->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ul,ol,li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: bisque;
+        }
+        /*가상선택자를 사용한 float 해제*/
+        ul::after, ol::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        #gnb {
+            width: 100%;
+            height: 60px;
+            background-color: #00a19c;
+        }
+        #gnb>ul {
+            /*px,% 2가지로 구현해 볼 것*/
+            /*width: 800px;*/
+            width: 80%;
+            background-color: indianred;
+            margin: 0 auto;
+            position: relative;
+        }
+        #gnb>ul>li {
+            /*width: 200px;*/
+            width: 25%;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            float: left;
+        }
+        #gnb a {
+            color: #fff;
+            font-weight: bold;
+            display: block;
+        }
+        
+        #gnb>ul>li>a:hover {
+            color: #001ab7;
+            background-color: #77dfd4;
+        }
+        
+        /*서브메뉴 디자인*/
+        .smenu {
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 0;
+            overflow: hidden; /*넘치는 자식요소 숨기기*/
+            background-color: #3a3a3a;
+            transition: height .4s;
+        }
+        .smenu li {
+            /*width: 200px;*/
+            width: 25%;
+            float: left;
+        }
+        #gnb .smenu>li:hover>a {
+            background-color: #ccc;
+            color: #393939;
+        }
+        
+        #gnb>ul>li:hover .smenu {
+            height: 60px;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div id="gnb">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li> <a href="#">웹개발</a>
+                <ul class="smenu">
+                    <li><a href="#">웹디자인</a></li>
+                    <li><a href="#">HTML/CSS</a></li>
+                    <li><a href="#">jQuery</a></li>
+                    <li><a href="#">웹/모바일</a></li>
+                </ul>
+            </li>
+            <li> <a href="#">게시판</a>
+                <ul class="smenu">
+                    <li><a href="#">Q&amp;A</a></li>
+                    <li><a href="#">방명록</a></li>
+                </ul>
+            </li>
+            <li><a href="#">프로필</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

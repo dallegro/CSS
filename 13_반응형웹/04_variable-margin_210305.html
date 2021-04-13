@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>04_variable-margin</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #wrap {
+            width: 90%;
+            /*960px*/
+            margin: 0 auto;
+            height: 500px;
+            border: 4px solid #000;
+        }
+        #wrap div {
+            display: inline-block;
+            width: 31.25%;
+            /* width: 300px;  300px / 960px*/
+            height: 100%;
+        }
+        #wrap div:first-child {
+            margin-right: 37.5%;
+            /*margin-right: 360px; 360px / 960px*/
+            background: #1f518b;
+        }
+        /*#wrap div:last-child {
+            background: #f7e041;
+        }*/
+        #wrap div:first-child+div {
+            /*first-child 다음에 오는 div*/
+            background: #f7e041;
+        }
+        
+        
+        
+    </style>
+</head>
+<body>
+   <div id="wrap">
+       <div></div><div></div>
+   </div>
+    
+</body>
+</html>

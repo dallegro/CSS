@@ -1,0 +1,8 @@
+https://github.com/scottjehl/Respond
+
+
+하위버전 미디어쿼리 적용을 위한 CSS 조건 주석문
+
+<!-- [if It IE 9]
+        <script src="respond.js"></script>
+<[endif] -->

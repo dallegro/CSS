@@ -1,0 +1,117 @@
+@charset 'urf-8';
+
+/*RESET*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*MAIN*/
+
+body {
+    text-align: center;
+    background-color: snow;
+}
+
+header {
+    width: 100%;
+    background-color: palevioletred;
+    padding: 50px 0;
+
+}
+
+section {
+    width: 1200px;
+    background-color: floralwhite;
+    margin: 0 auto;
+}
+
+section .main {
+    background-color: mistyrose;
+    height: 400px;
+    line-height: 100px;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8 {
+    width: 300px;
+    height: 300px;
+    float: left;
+    line-height: 300px;
+}
+
+.box1 {
+    background-color: lightgray;
+}
+
+.box2 {
+    background-color: lightgoldenrodyellow;
+}
+
+.box3 {
+    background-color: lightgray;
+}
+
+.box4 {
+    background-color: lightgoldenrodyellow;
+}
+
+.box5 {
+    background-color: lightgoldenrodyellow;
+}
+
+.box6 {
+    background-color: lightgray;
+}
+
+.box7 {
+    background-color: lightgoldenrodyellow;
+}
+
+.box8 {
+    background-color: lightgray;
+}
+
+/*float을 해제하는 가상 선택자.가장 많이 사용*/
+.clearfix:after {
+/*실제로 존재하는 선택자는 아님. */
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.banner {
+    line-height: 150px;
+    width: 100%;
+    height: 150px;
+    background-color: lightcoral;
+}
+.site {
+    width: 100%;
+    height: 100px;
+    background-color: lightsteelblue;
+}
+footer {
+    width: 100%;
+    margin: 0 auto;
+    line-height: 100px;
+    height: 100px;
+    background-color: lightblue
+}

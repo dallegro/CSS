@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>08_example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(images/pattern_gray.png);
+            background-repeat: repeat;
+        }
+
+        .m1 {
+            width: 100%;
+            height: 80px;
+            margin: 80px 0;
+            border-top: 1px solid black;
+            border-bottom: 4px solid black;
+            background-image: url(images/faq_topimg.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-color: white;
+        }
+        .m2 {
+            width: 700px;
+            color: white;
+            background-color: dimgray;
+            border: 4px solid white;
+            padding: 30px;
+            border-radius: 30px;
+            display: inline-block;
+        }
+        .inline-block{
+            text-align: center;
+        }
+        .m2 hr {
+            border-style:dashed;
+            color: white;
+            margin: 10px;
+        }
+        .m2 h1 {
+            padding-left: 30px; 
+        }
+        .m2 p {
+            
+            border: 1px solid #000;
+            background-color: #000;
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px 10px 0 20px;
+        } 
+        .m2 p span {
+            color: greenyellow;
+            margin: 10px;
+        }
+        .m2 ul {
+            margin-top:20px;
+            list-style: none;
+            
+            margin: 10px 10px 0 60px;
+        }
+        .m2 ul li span {
+            color: yellow;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="m1"></div>
+    
+    <div class="m2">
+    <h1>3DS MAX에서 에러 메시지</h1>
+    <hr>
+    <div class="m2_1">
+    <p><b><span>Q..</span> Missing Map Files의 에러 메시지가 나옵니다.</b></p>
+    <ul>
+        <li>
+            <span>A..</span> 위와 같은 에러 메시지는 맥스 3.1 풀버전을 설치하시지 않으셨기 때문입니다. 맥스 3.1 setup 시에 custom 옵션에서 모든 항목을 체크하시면 door와 windows라는 플러그인이 설치가 됩니다.
+        </li>
+    </ul>
+    </div>
+    </div>
+
+</body>
+
+</html>

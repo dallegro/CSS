@@ -1,0 +1,89 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/**PC****/
+#wrap {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 200px;
+    background: pink;
+}
+
+#container:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+nav {
+    width: 300px;
+    height: 500px;
+    float: left;
+    background: plum;
+}
+
+main {
+    width: 900px;
+    height: 500px;
+    float: left;
+    background: skyblue;
+}
+
+
+/*노트북*/
+@media (min-width:769px)and (max-width:1000px) {
+    body {
+        padding: 0 50px;
+    }
+
+    #wrap {
+        width: 100%;
+    }
+
+    nav {
+        width: 30%;
+    }
+
+    main {
+        width: 70%;
+    }
+}
+
+/*태블릿*/
+@media (min-width:321px) and (max-width:768px) {
+    #wrap {
+        width: 100%;
+    }
+
+    nav {
+        width: 30%;
+    }
+
+    main {
+        width: 70%;
+    }
+}
+
+/*모바일*/
+@media (min-width:0px)and(max-width:320px) {
+    #wrap {
+        width: 100%;
+    }
+
+    nav {
+        float: none;
+        width: 100%;
+    }
+
+    main {
+        float: none;
+        width: 100%;
+    }
+}

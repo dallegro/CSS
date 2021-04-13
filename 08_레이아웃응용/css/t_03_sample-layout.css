@@ -1,0 +1,149 @@
+@charset 'utf-8';
+
+* {
+    border: 0;
+    padding: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*float을 해제하는 가상 선택자*/
+/*언제든 여러번 가져와서 쓸 수 있게 css 상단에 미리 만들어 둠*/
+.clearfix:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+/*main*/
+
+body {
+    background-color: white;;
+    line-height: 50px; /*라인하이트는 한줄의 높이. */
+    text-align: center;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    background-color: #fed136;
+}
+.main {
+    width: 100%;
+    height: 380px;
+    background-color: lightcoral;
+}
+section {
+    margin: 0 auto;
+    width: 90%;
+    background-color: khaki;
+    
+}
+
+section .wrap .con1 {
+    width: 30%;
+    height: 280px;
+    background-color: paleturquoise;
+    float: left;
+}
+section .wrap .sub-wrap {
+    width: 15%;
+    float: left;
+}
+section .wrap .sub-wrap .con2 {
+    height: 70px;
+    background-color: khaki;
+    
+}
+section .wrap .sub-wrap .con3 {
+    height: 70px;
+    background-color: lightcyan;}
+section .wrap .sub-wrap .con4 {
+    height: 70px;
+    background-color: lightblue;}
+section .wrap .sub-wrap .con5 {
+    height: 70px;
+    background-color: lightsalmon;}
+
+section .wrap .con6 {
+    width: 55%;
+    height: 280px;
+    float: left;
+    background-color: mistyrose;
+}
+
+.title {
+    height: 120px;
+    background-color: cornflowerblue;
+}
+.wrap2 .left {
+    width: 60%;
+    background-color: aquamarine;
+    float: left;
+}
+
+.wrap2 .left .con7 {
+    width: 100%;
+    height: 150px;
+    background-color: gold;
+}
+.wrap2 .left .con8 {
+    width: 50%;
+    height:  150px;
+    background-color: aliceblue;
+    float: left;
+}
+.wrap2 .left .con9 {
+    
+    width: 50%;
+    height:  150px;
+    background-color: floralwhite;
+    float: left;
+}
+.wrap2 .left .con10 {
+    
+    width: 50%;
+    height:  150px;
+    background-color: paleturquoise;
+    float: left;
+}
+.wrap2 .left .con11 {
+    width: 50%;
+    height:  150px;
+    background-color: palegreen;
+    float: left;
+}
+
+
+.wrap2 .right {
+    width: 40%;
+    background-color: burlywood;
+    float: right;
+}
+
+.wrap2 .right .con12 {
+    height: 300px;
+    background-color: darkgray;
+}
+.wrap2 .right .con13 {
+    height: 150px;
+    background-color: lightcoral;
+}
+.partners {
+    height: 120px;
+    background-color: indianred;
+    
+}
+footer {
+    width: 90%;
+    margin: 0 auto;
+    background-color: black;
+    height: 100px;
+}

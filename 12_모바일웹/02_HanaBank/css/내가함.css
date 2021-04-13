@@ -1,0 +1,121 @@
+
+.login_nav {
+    text-align: center;
+}
+
+.login_nav h2 {
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    background: #006b76;
+    height: 30px;
+    line-height: 30px;
+}
+
+.login_nav > ul {
+    height: 40px;
+    background-color: rgb(0, 86, 94);
+}
+
+.login_nav > ul li {
+    width: 33.33%;
+    float: left;
+    line-height: 40px;
+    font-size: 13px;
+
+}
+
+.login_nav > ul li a {
+    color: #b3d3d6;
+    letter-spacing: -1px;
+}
+
+.login, .ars{
+    background: #ececec;
+    padding: 15px;
+}
+
+.login .login_wrap, .ars_wrap {
+
+    border: 1px solid darkgray;
+    border-radius: 20px;
+    background-color: #fff;
+
+
+}
+
+.login .login_wrap .login_lr_wrap {
+}
+
+.login .login_wrap .login_lr_wrap > h2 {
+
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    border-bottom: 2px solid #117e88;
+    margin-bottom: 20px;
+}
+
+.login .login_wrap .login_lr_wrap > .left {
+
+    text-align: center;
+    width: 50%;
+    /*    outline: 3px solid red;*/
+    float: left;
+    border-right: 1px solid #bcbcbc;
+    box-sizing: border-box;
+    font-weight: 900;
+    letter-spacing: -2px;
+}
+.login .login_wrap .login_lr_wrap > .right {
+    text-align: center;
+    letter-spacing: -2px;
+    font-weight: 900;
+    float: right;
+    width: 50%;
+    /*    outline: 3px solid red;*/
+}
+
+.login .login_wrap .login_lr_wrap > .left > p {
+    height: 60px;
+}
+
+
+.login .login_wrap .login_lr_wrap > .right > p {
+    height: 60px;
+}
+
+.login .login_wrap>p{
+    clear: both;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #ececec;
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    
+    
+}
+/**버튼 CSS**/
+.btn6,
+.btn7 {
+    width: 50%;
+    font-size: 0.9em;
+    display: inline-block;
+    padding: 0 8px;
+    box-sizing: border-box;
+    min-width: 58px;
+    height: 32px;
+    line-height: 32px;
+    color: #fff;
+    border-radius: 15px;
+    letter-spacing: -2px;
+}
+
+.btn6 {
+    background: #F73880;
+}
+
+.btn7 {
+    background: #636e6f;
+}

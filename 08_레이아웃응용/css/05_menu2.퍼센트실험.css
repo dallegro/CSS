@@ -1,0 +1,153 @@
+@charset 'utf-8';
+
+/*RESET*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*//RESET*/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body {
+    text-align: center;
+    line-height: 60px;
+}
+
+/*head*/
+header {
+    height: 100px;
+    margin: 0 auto;
+    width: 90%;
+    line-height: 100px;
+}
+
+header h1 {
+    float: left;
+    width: 20%;
+    /*background-color: dimgrey;*/
+    color: darkred;
+    font-size: 1em;
+}
+
+header nav {
+    width: 80%;
+    float: right;
+}
+
+header  nav ul {
+    /*background-color: bisque;*/
+    text-align: right;
+}
+
+header  nav ul li {
+    display: inline-block;
+}
+
+header  nav ul li a {
+    padding: 30px;
+    color: black;
+}
+
+header nav ul li a:hover {
+    background-color: peachpuff;
+}
+
+/*//head*/
+
+/*section*/
+section {
+    margin-bottom: 2%;
+}
+.main {
+    background-color: burlywood;
+    width: 90%;
+    height: 60%;
+    margin: 0 auto;
+}
+
+.sub {
+    width: 90%;
+    height: 40%;
+    margin: 2% auto;
+    background-color: #eee;
+}
+.sub h2{
+    padding: 1%;
+    font-size: 2em;
+}
+.con-wrap {
+    border: 0 auto;
+}
+.con1{
+    margin: 0 0.8%;
+    width: 20%;
+    height: 70%;
+    background-color: lightyellow;
+    float: left;
+}
+.con2{
+    margin: 0 0.8%;
+
+    height: 70%;
+    width: 55%;
+    background-color: papayawhip;
+    float: left;}
+.con3{
+    margin: 0 0.8%;
+
+    height: 70%;
+    width: 20%;
+    background-color: lightsteelblue;
+    float: left;}
+
+
+.banner {
+    width: 90%;
+    background-color: cadetblue;
+    margin: 0 auto;
+    height: 30%;
+}
+
+
+/*footer*/
+footer {
+    font-size: 0.8em;
+    width: 100%;
+    background-color: #eee;
+}
+.f-wrap {
+    padding: 1% 0;
+    width: 90%;
+    margin: 0 auto;
+}
+.f-wrap .logo {
+    text-align: left;
+    width: 40%;
+    float: left;
+}
+.f-wrap ul { 
+    width: 60%;
+    float: right;
+    
+    text-align: right;
+}
+.f-wrap ul li a{
+    padding-left: 10%;
+    color: black;
+    
+}

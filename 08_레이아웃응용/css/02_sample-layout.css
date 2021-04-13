@@ -1,0 +1,124 @@
+@charset 'urf-8';
+
+/*RESET*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ol,ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/*MAIN*/
+
+body {
+    text-align: center;
+    background-color: snow;
+}
+
+header {
+    width: 100%;
+    background-color: palevioletred;
+    padding:50px 0;
+    
+}
+section {
+    width: 1200px;
+    background-color: floralwhite;
+    margin: 0 auto;
+}
+section .con1 {
+    background-color: mistyrose;
+    height: 400px;
+    line-height: 100px;
+}
+section .con2 {
+    width: 100%;
+    background-color: lightgray;
+}
+section .con2-wrap {
+    width: 100%;
+}
+.con2-wrap p:nth-child(1) {
+    width: 300px;
+    height: 300px;
+    float: left;
+    line-height: 100px;
+    background-color: lightpink
+}
+.con2-wrap p:nth-child(2) {
+    width: 300px;
+    height: 300px;
+    float: left;
+    line-height: 100px;
+    background-color: snow;
+}
+.con2-wrap p:nth-child(3) {
+    width: 300px;
+    height: 300px;
+    float: left;
+    line-height: 100px;
+    background-color:lightblue;
+}
+.con2-wrap p:nth-child(4) {
+    width: 300px;
+    height: 300px;
+    float: left;
+    line-height: 100px;
+    background-color: wheat;
+}
+.con2-wrap p:nth-child(5) {
+    width: 300px;
+    height: 300px;
+    float: left;
+    line-height: 100px;
+    background-color: lightgreen;
+}
+.con2-wrap p:nth-child(6) {
+    width: 300px;
+    height: 300px;
+    float: left;
+    line-height: 100px;
+    background-color: antiquewhite;
+}
+.con2-wrap p:nth-child(7) {
+    width: 300px;
+    height: 300px;
+    float: left;
+    line-height: 100px;
+    background-color: gainsboro;
+}
+.con2-wrap p:nth-child(8){
+    width: 300px;
+    height: 300px;
+    float: left;
+    line-height: 100px;
+    background-color: cadetblue;
+}
+
+.con3 {
+    line-height: 100px;
+    height: 200px;
+    clear: both;
+    background-color: salmon;
+}
+.con4{
+    margin: 0 auto;
+    line-height: 100px;
+    height:100px;
+    background-color: lightyellow;
+}
+footer {
+    width: 100%;
+    margin: 0 auto;
+}
+footer p {
+    line-height: 100px;
+    height: 100px;
+    background-color: lightblue;
+}

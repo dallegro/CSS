@@ -1,0 +1,184 @@
+<!DOCTYPE>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>navi_osulloc_t</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: url(images/sample1.jpg) no-repeat center top;
+        }
+        
+        /*네비게이션 부모박스 먼저 자리 잡기*/
+        #navibar {
+            width: 1366px;
+            height: 60px;
+            /*background-color: firebrick;
+            */margin:0 auto;
+            
+            position: relative; /*기준*/
+            top: 92px;
+            
+        }
+        #navibar>ul {
+            width: 906px;
+           /* background-color: yellow;*/
+            margin-left: 230px;
+            /*margin 0 auto 사용해도 ㄱㅊ*/
+        }
+        #navibar>ul:after {
+            /*가상선택자! 플룻된 가상선택자가 끝났을때*/
+            content: "";
+            display: block;
+            clear: both;
+            /*세개가 세트라고 생각하고 외워쓰면 편하다!*/
+        }
+        
+        /*네비게이션 상위 메뉴(대메뉴) li*/
+        #navibar>ul>li {
+            width: 20%;
+            height: 60px;
+            text-align: center;
+            float: left;
+            position: relative;
+        }
+        #navibar>ul>li>a {
+            text-decoration: none;
+            color: rgba(255,255,255,0.8);
+            font: bold 16px/60px "Noto Sans KR";
+            /*font: weifgt size/line-height familt;*/
+            padding-bottom: 6px;
+            transition: all .8s;
+        }
+        #navibar>ul>li>a:hover {
+            color: #cde018;
+            border-bottom: 2px solid #cde018;
+            
+        }
+        /*하위메뉴 디자인*/
+        
+        .smenu {
+            width: 100%;
+            background-color: rgba(255,255,255,0.8);
+           /* padding-top: 20px;*/
+            
+            height: 0;
+            overflow: hidden;
+            
+            
+            position:absolute; /*대메뉴 li가 기준*/
+            left: 0;
+            
+        }
+        .smenu li {
+            line-height: 32px;
+            font-size: 14px;
+        }
+        #navibar>ul>li:hover .smenu {
+            padding-top: 20px;
+        }
+        /*li:hover 높잇값 변경*/
+        #navibar>ul>li:nth-child(1):hover .smenu {
+            height: 200px;
+        }
+         #navibar>ul>li:nth-child(2):hover .smenu {
+            height: 200px;
+        } #navibar>ul>li:nth-child(3):hover .smenu {
+            height: 170px;  
+        } #navibar>ul>li:nth-child(4):hover .smenu {
+            height: 200px;
+        } #navibar>ul>li:nth-child(5):hover .smenu {
+            height: 110px;
+        } 
+        .smenu>li>a {
+            text-decoration: none;
+            color: #333;
+        }
+        .smenu>li>a:hover{
+            color: #cde018;
+            font-weight: bold;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div id="navibar">
+        <ul>
+            <li><a href="#">Shop</a>
+
+                <ol class="smenu">
+                    <li><a href="#">Tea Shop</a></li>
+                    <li><a href="#">Tea ware Shop</a></li>
+                    <li><a href="#">Gift Shop</a></li>
+                    <li><a href="#">Weekly Best</a></li>
+                    <li><a href="#">공동구매</a></li>
+                    <li><a href="#">오설록 라운지</a></li>
+                </ol>
+            </li>
+            <li><a href="#">Tea Life</a>
+                <ol class="smenu">
+                    <li><a href="#">상품 구매후기</a></li>
+                    <li><a href="#">선물하기</a></li>
+                    <li><a href="#">다다일상(정기구독)</a></li>
+                    <li><a href="#">맞춤추천</a></li>
+                    <li><a href="#">MD's PICK</a></li>
+                    <li><a href="#">매장 방문기</a></li>
+                </ol>
+            </li>
+
+            <li><a href="#">Event</a>
+                <ol class="smenu">
+                    <li><a href="#">2020 GOLDEN PICK</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">온라인 쇼핑혜택</a></li>
+                    <li><a href="#">인스타그램</a></li>
+                    <li><a href="#">About Tea</a></li>
+                </ol>
+            </li>
+
+            <li><a href="#">About OSULLOC</a>
+                <ol class="smenu">
+                    <li><a href="#">Brand Story</a></li>
+                    <li><a href="#">Since 1979</a></li>
+                    <li><a href="#">오설록 차밭 이야기</a></li>
+                    <li><a href="#">숫자로 보는 오설록</a></li>
+                    <li><a href="#">티하우스 메뉴</a></li>
+                    <li><a href="#">매거진</a></li>
+                </ol>
+            </li>
+
+            <li><a href="#">Jeju Tea Museum</a>
+                <ol class="smenu">
+                    <li><a href="#">티뮤지엄 소개</a></li>
+                    <li><a href="#">티스톤 예약</a></li>
+                    <li><a href="#">제주 오설록 맵</a></li>
+                </ol>
+            </li>
+
+        </ul>
+    </div>
+
+
+
+</body>
+
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>04_example</title>
+    <style>
+        .wrap .item {
+            float: left;
+            margin: 10px;
+            text-align: center;
+            color: white;
+            overflow: hidden;
+            position: relative;
+            /*
+            transition: .6s ease-out;*/
+        }
+
+        .wrap .item:hover .text{
+            
+            background-color: rgba(25, 25, 25, 0.8);
+            position: absolute;
+            width: 300px;
+            height: 200px;
+            top: 0;
+            
+            transition: .6s ease-out;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>신상품 목록</h1>
+    <div class="wrap">
+        <div class="item">
+            <img src="images/prod1.jpg" alt="">
+            <div class="text">
+                <h2>상품1</h2>
+                <p>상품 1 설명 텍스트</p>
+                <p>가격 :112,345원</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/prod2.jpg" alt="">
+            <div class="text">
+                <h2>상품2</h2>
+                <p>상품 3 설명 텍스트</p>
+                <p>가격 :112,345원</p>
+            </div>
+        </div>
+
+        <div class="item">
+            <img src="images/prod3.jpg" alt="">
+            <div class="text">
+                <h2>상품3</h2>
+                <p>상품 3 설명 텍스트</p>
+                <p>가격 :112,345원</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

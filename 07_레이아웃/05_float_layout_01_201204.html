@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>05_float_layout_201204</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: antiquewhite;
+        }
+
+        .wrap {
+            width: 90%;
+            background-color: yellow;
+            margin: 0 auto;
+            margin-top: 50px;
+            overflow: hidden;
+            /*float된 자식요소의 높잇값을 읽어줌*/
+
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            width: 200px;
+            height: 200px;
+            float: left;
+            /*부모가 자식선택자의 위치를 알지못해서 .wrap이 안보임*/
+            margin-right: 20px;
+        }
+
+        .box1 {
+            background-color: darkseagreen;
+        }
+
+        .box2 {
+            background-color: lightcoral;
+        }
+
+        .box3 {
+            background-color: dodgerblue;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="wrap">
+
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+
+
+    </div>
+</body>
+
+</html>

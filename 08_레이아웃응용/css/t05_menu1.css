@@ -1,0 +1,142 @@
+@charset 'utf-8';
+
+/*RESET*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul,li,ol {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/*//RESET*/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+body { 
+    text-align: center;
+    line-height: 60px;
+}
+
+header {
+    width: 90%;
+    /*background-color: antiquewhite;*/
+    margin: 0 auto;
+    overflow: hidden;
+}
+header .logo {
+    width: 50%;
+    height: 70px;
+   /* background-color: ghostwhite;*/
+    margin: 20px auto 0;
+    
+}
+header nav {
+    width: 600px;
+    margin: 0 auto;
+    background-color: paleturquoise;
+}
+header nav ul li {
+    /*float: lift*/
+    /*display: inline-block;*/
+    width: 150px;
+    float: left;
+}
+header nav ul li a {
+    color: black;
+    display: block;
+}
+header nav ul li:hover {
+    background-color: indianred;
+    color: white;
+    
+}
+header nav ul li a:hover {
+    color: white;
+    background-color: indianred;
+    font-weight: bold;
+}
+
+.main {
+    width: 90%;
+    height: 500px;
+    background-color: plum;
+    margin: 0 auto;
+}
+
+.item-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+.item-wrap .item1 {
+    width: 25%;
+    height: 250px;
+    background-color: greenyellow;
+    float: left;
+}
+.item-wrap .item2 {
+    width: 25%;
+    height: 250px;
+    background-color: lightpink;
+      float: left;
+}
+.banner-wrap {
+    width: 90%;
+    margin: 0 auto;
+}
+.banner-wrap .banner1{
+    width: 50%;
+    height: 100px;
+    background-color: lightcoral;
+    float: left;
+}
+.banner-wrap .banner2 {
+    width: 50%;
+    height: 100px;
+    background-color: olive;
+    float: left;
+}
+
+footer {
+    width: 100%;
+    background-color: lightblue;
+    margin-top: 50px;
+    border-top: 1px solid #4888;
+    }
+footer .footer-wrap
+{
+    width: 90%;
+    height: 30px;
+    margin:0 auto;
+    font-size: 12px;
+    border-bottom: 0.5px solid #888;
+    line-height: 30px;
+}
+footer .footer-wrap ul {
+    width: 60%;
+    float: left;
+}
+footer .footer-wrap ul li {
+    margin-right: 20px;
+    float: left;
+}
+footer .footer-wrap div {
+    text-align: right;
+    width: 40%;
+    float: right;
+}
+footer .copy{
+    width: 90%; 
+    margin: 0 auto;
+    line-height: 100px;
+    height: 100px;
+    font-size: 14px;
+    text-align: left;
+}

@@ -1,0 +1,147 @@
+@charset 'utf-8';
+
+/*reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+/*float을 해제하는 가상 선택자*/
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+/*main*/
+body {
+    background-color: seashell;
+    line-height: 50px;
+    text-align: center;
+}
+header {
+    width: 100%;
+    height: 120px;
+    background-color: #fed136;
+}
+.main {
+    width: 100%;
+    height: 380px;
+    background-color: lightcoral;
+}
+section {
+    width: 90%;
+    background-color: cornsilk;
+    margin: 0 auto;
+}
+section .wrap .con1 {
+    width: 30%;
+    height: 280px;
+    background-color: skyblue;
+    float: left;
+}
+section .wrap .sub-wrap {
+    width: 15%;
+    float: left;
+}
+section .wrap .sub-wrap .con2 {
+    height: 70px;
+    background-color: darkseagreen;
+}
+section .wrap .sub-wrap .con3 {
+    height: 70px;
+    background-color: lemonchiffon;
+}
+section .wrap .sub-wrap .con4 {
+    height: 70px;
+    background-color: lightsalmon;
+}
+section .wrap .sub-wrap .con5 {
+    height: 70px;
+    background-color: cyan;
+}
+
+section .wrap .con6 {
+    width: 55%;
+    height: 280px;
+    background-color: chocolate;
+    float: left;
+}
+
+.title {
+    height: 120px;
+    background-color: plum;
+   /* clear: both;*/
+}
+.wrap2 .left {
+    width: 60%;
+    background-color: yellow;
+    float: left;
+}
+.wrap2 .left .con7 {
+    width: 100%;
+    height: 150px;
+    background-color: gold;
+}
+.wrap2 .left .con8 {
+    width: 50%;
+    height: 150px;
+    background-color: darkmagenta;
+    float: left;
+}
+.wrap2 .left .con9 {
+    width: 50%;
+    height: 150px;
+    background-color: lightpink;
+    float: left;
+}
+.wrap2 .left .con10 {
+    width: 50%;
+    height: 150px;
+    background-color: lightskyblue;
+    float: left;
+}
+.wrap2 .left .con11 {
+    width: 50%;
+    height: 150px;
+    background-color: darkorange;
+    float: left;
+}
+
+
+.wrap2 .right {
+    width: 40%;
+    background-color: burlywood;
+    float: right;
+}
+.wrap2 .right .con12 {
+    height: 300px;
+    background-color: darkseagreen;
+}
+.wrap2 .right .con13 {
+    height: 150px;
+    background-color: darkcyan;
+}
+.partners {
+    height: 120px;
+    background-color: goldenrod;
+}
+footer {
+    width: 90%;
+    background-color: black;
+    margin: 0 auto;
+    color: white;
+    height: 100px;
+}
+
+
+
+
+

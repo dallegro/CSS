@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="utf-8">
+	<title>03_box_example</title>
+
+	<style>
+		body {
+			margin-bottom: 300px;
+		}
+
+		/*history box*/
+		.history div {
+			border: 1px solid #e1e1e1;
+			border-top: 1px solid #000;
+			height: 54px;
+			line-height: 54px;
+			margin-bottom: 10px;
+			/*padding: 0 0 0 30px;*/
+			padding-left: 30px;
+			font-weight: bold;
+		}
+
+		/*category-box*/
+		.category {
+			width: 300px;
+			border: 1px solid #ccc;
+			font-size: 0;
+			padding: 20px 20px 40px;
+		}
+
+		.category h2 {
+			font-size: 18px;
+			color: #666;
+			padding-bottom: 10px;
+		}
+
+		.category a {
+			font-size: 14px;
+			color: #666;
+			text-decoration: none;
+			line-height: 24px;
+			margin-right: 8px;
+			border-right: 1px solid #cacaca;
+			padding-right: 7px;
+		}
+
+		.category .none {
+			/*border-right: 0;*/
+			border-right: none;
+		}
+
+		/*TV CF*/
+		.tvcf {
+			border-top: 1px solid #ddd;
+			border-bottom: 1px solid #ddd;
+			/*margin: 30px 0 0 0;*/
+			margin-top: 30px;
+			padding: 100px 40px;
+		}
+
+		.tvcf div {
+			border: 1px solid #f47321;
+			width: 70px;
+			text-align: center;
+			font-weight: bold;
+			color: #f47321;
+
+			/*height: 30px;
+				line-height: 30px;*/
+			padding: 10px 0;
+		}
+
+		.tvcf h2 {
+			line-height: 36px;
+			margin-bottom: 30px;
+			color: red;
+		}
+
+		.tvcf h2 a {
+			color: #000;
+			text-decoration: none;
+			font-size: 20px;
+		}
+
+		.tvcf p {
+			width: 340px;
+			word-break: keep-all;
+		}
+
+		.tvcf p a {
+			color: #6d6d6d;
+			text-decoration: none;
+			font-size: 14px;
+			line-height: 26px;
+		}
+		
+		hr {
+			/*border-color: red;
+			border-width: 1px;
+			border-style: solid;*/
+			border :1px solid red;
+		}
+		
+	</style>
+</head>
+
+<body>
+	<!--hitory box-->
+	<div class="history">
+		<div>2017 ~ 현재</div>
+		<div>2002 ~ 2017</div>
+	</div>
+
+	<!--category box-->
+	<div class="category">
+		<h2>세부 카테고리</h2>
+		<a href="#">이혼.가정</a>
+		<a href="#">상속</a>
+		<a href="#">금전</a>
+		<a href="#">형사.범죄</a>
+		<a href="#">교통사고</a>
+		<a href="#">노무</a>
+		<a href="#">부동산</a>
+		<a href="#">지적재산권</a>
+		<a href="#">세무</a>
+		<a href="#">국제.외국인</a>
+		<a href="#">의료</a>
+		<a href="#">기업법무</a>
+		<a href="#">행정사건</a>
+		<a href="#">재판.분쟁</a>
+		<a href="#" class="none">민사.기타</a>
+	</div>
+
+
+	<!--Tv box-->
+	<div class="tvcf">
+		<div>TV CF</div>
+		<h2><a href="#">2020 홀리데이 봄 컬렉션<br>Holiday by Barrel</a></h2>
+		<p><a href="#">올드스쿨을 컨셉으로 캐주얼 무드의 룩을 선보이는 2020홀리데이 <b>서퍼스 클럽(Surfer's Club)</b></a></p>
+	</div>
+
+<!--	<hr>-->
+
+
+
+
+</body>
+
+</html>

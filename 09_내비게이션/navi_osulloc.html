@@ -1,0 +1,147 @@
+<!DOCTYPE>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+    <style>
+        * {margin: 0; padding: 0;}
+        ul,ol,li {list-style: none;}
+        a {
+            text-decoration: none;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: url(images/sample1.jpg) no-repeat center top;
+        }
+        #gnb {
+            width:100%;
+            height: 60px;
+         /*   background-color: navajowhite;*/
+        }
+        #gnb>ul {
+            width: 1000px;
+         /*   background-color: fuchsia;*/
+            margin: 92px auto;
+        }
+        #gnb>ul>li {
+            width: 20%;
+            height: 60px;
+            line-height: 60px;
+            float: left;
+       /*     background-color:firebrick;*/
+            text-align: center;
+        }
+        #gnb>ul>li>a:hover{
+        color: #cde018;
+       /* background-color: dimgrey;*/
+        text-decoration: underline;
+        }
+        
+        #gnb>ul>li>a {
+            color: white;
+            font-weight: bold;
+            display: block;
+
+        }
+        /*서브메뉴*/
+        .smenu{
+            background-color: white; /*투명도 어떻게 하는거더라? rgba()..어쩌구?*/
+            height: 0;
+            overflow: hidden;
+            transition: height .4s ease-out;
+        }
+        .smenu>li>a {
+            color: #666;
+            display: block;
+        }
+        .smenu>li:hover>a{
+        /*    background-color: #ccc;*/
+            color: #ced018
+        }
+        #gnb>ul>li:nth-child(1):hover .smenu{
+            height: 360px;
+        }
+        
+        #gnb>ul>li:nth-child(2):hover .smenu{
+            height: 360px;
+        }
+        #gnb>ul>li:nth-child(4):hover .smenu{
+            height: 360px;
+        }
+        #gnb>ul>li:nth-child(3):hover .smenu{
+            height: 300px;
+        }
+        #gnb>ul>li:nth-child(5):hover .smenu {
+            height: 180px;
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    <div id="gnb">
+
+        <ul>
+            <li><a href="#">Shop</a>
+
+                <ol class="smenu">
+                    <li><a href="#">Tea Shop</a></li>
+                    <li><a href="#">Tea ware Shop</a></li>
+                    <li><a href="#">Gift Shop</a></li>
+                    <li><a href="#">Weekly Best</a></li>
+                    <li><a href="#">공동구매</a></li>
+                    <li><a href="#">오설록 라운지</a></li>
+                </ol>
+            </li>
+
+            <li><a href="#">Tea Life</a>
+                <ol class="smenu">
+                    <li><a href="#">상품 구매후기</a></li>
+                    <li><a href="#">선물하기</a></li>
+                    <li><a href="#">다다일상(정기구독)</a></li>
+                    <li><a href="#">맞춤추천</a></li>
+                    <li><a href="#">MD's PICK</a></li>
+                    <li><a href="#">매장 방문기</a></li>
+                </ol>
+            </li>
+
+            <li><a href="#">Event</a>
+                <ol class="smenu">
+                    <li><a href="#">2020 GOLDEN PICK</a></li>
+                    <li><a href="#">이벤트</a></li>
+                    <li><a href="#">온라인 쇼핑혜택</a></li>
+                    <li><a href="#">인스타그램</a></li>
+                    <li><a href="#">About Tea</a></li>
+                </ol>
+            </li>
+
+            <li><a href="#">About OSULLOC</a>
+                <ol class="smenu">
+                    <li><a href="#">Brand Story</a></li>
+                    <li><a href="#">Since 1979</a></li>
+                    <li><a href="#">오설록 차밭 이야기</a></li>
+                    <li><a href="#">숫자로 보는 오설록</a></li>
+                    <li><a href="#">티하우스 메뉴</a></li>
+                    <li><a href="#">매거진</a></li>
+                </ol>
+            </li>
+
+            <li><a href="#">Jeju Tea Museum</a>
+                <ol class="smenu">
+                    <li><a href="#">티뮤지엄 소개</a></li>
+                    <li><a href="#">티스톤 예약</a></li>
+                    <li><a href="#">제주 오설록 맵</a></li>
+                </ol>
+            </li>
+
+        </ul>
+    </div>
+
+
+
+</body>
+
+</html>

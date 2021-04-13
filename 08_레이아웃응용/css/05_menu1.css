@@ -1,0 +1,158 @@
+@charset 'utf-8';
+
+/*RESET*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+ul,
+li,
+ol {
+    list-style: none;
+
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/*//RESET*/
+body {}
+
+/*header*/
+header {
+    text-align: center;
+    width: 100%;
+    /*background-color: antiquewhite;*/
+
+}
+
+header h1 {
+    font-size: 1em;
+    padding: 50px;
+}
+
+header nav {
+    /*background-color: salmon;*/
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 15px 30px;
+    /*background-color: forestgreen;*/
+}
+
+header nav ul li a {
+    padding: 15px 30px;
+}
+
+header nav ul li a:hover {
+    background-color: mediumpurple;
+    color: white;
+}
+
+/*//header*/
+
+section {
+    text-align: center;
+    margin: 0 auto;
+    width: 1200px;
+
+    /*background-color: antiquewhite;*/
+
+}
+
+section .swiper {
+    width: 100%;
+    height: 400px;
+    line-height: 400px;
+    background-color: lightgrey;
+}
+
+section .content-wrap {
+    line-height: 100px;
+    width: 100%;
+    height: 200px;
+    background-color: fuchsia;
+}
+
+section .content-wrap .con-a {
+
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: lightyellow;
+}
+
+section .content-wrap .con-b {
+
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: skyblue;
+}
+
+section .banner-wrap {
+    line-height: 100px;
+    width: 100%;
+    height: 100px;
+}
+
+section .banner-wrap .banner1 {
+    width: 50%;
+    height: 100%;
+    float: left;
+    background-color: lightblue;
+}
+
+section .banner-wrap .banner2 {
+    width: 50%;
+    height: 100%;
+    background-color: antiquewhite;
+    float: left;
+}
+
+footer {
+    margin-top: 50px;
+    background-color: whitesmoke;
+    border: 1px solid #ddd;
+}
+
+footer ul {
+    width: 1200px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+footer ul li {
+    /*
+    background-color: antiquewhite;*/
+    display: inline-block;
+}
+
+footer ul li a {
+    width: 100%;
+    line-height: 40px;
+    font-size: 0.8em;
+    padding: 10px;
+}
+
+footer p {
+    width: 1200px;
+    margin: 0 auto;
+    border-top: 4px solid #ddd;
+    padding: 10px 0;
+    height: 100px;
+    line-height: 100px;
+    /*
+    background-color: forestgreen;
+*/
+}

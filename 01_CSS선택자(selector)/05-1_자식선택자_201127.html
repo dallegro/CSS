@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>05-1_자식선택자</title>
+	
+	<style>
+		.main>li {
+			color: red;
+		}
+	
+		.sub>li {
+			color: indianred;
+		}
+		.sub>li>a {
+			color: greenyellow;
+		}
+	
+	</style>
+</head>
+<body>
+	<ul class="main">
+		<li>menu
+			<ul class="sub">
+				<li><a href="#">sub</a></li>
+				<li>sub</li>
+				<li><a href="#">sub</a></li>
+				<li>sub</li>
+				<li>sub</li>
+			</ul>
+		</li>
+	</ul>
+	
+</body>
+</html>

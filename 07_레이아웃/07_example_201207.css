@@ -1,0 +1,159 @@
+@charset 'utf-8';
+
+/*reset css*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,ol,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: orange;
+}
+
+
+/*MAIN CSS*/
+
+body {
+    background-image: url(images/bg.jpg);
+    color: white;
+}
+
+header {
+    width: 100%;
+    /*background-color: yellow;*/
+    background-image: url(images/bg-header.jpg);
+    height: 100px;
+    position: fixed;
+    z-index: 999;
+}
+.header-inner {
+    width: 960px;
+    /*background-color: lightblue;*/
+    margin: 0 auto;
+    height: 100px;
+}
+.header-inner h1 {
+    float: left;
+    margin-left: 24px;
+}
+.header-inner h1 img:first-child {
+    margin-bottom: 20px;
+}
+
+.header-inner nav {
+    float: right;
+    line-height: 100px;
+    color: silver;
+}
+.header-inner nav a {
+    color: silver;
+}
+.header-inner nav a:hover {
+    color: greenyellow;
+    font-weight: bold;
+}
+
+section {
+    width: 960px;
+    background-color: red;
+    margin: 0 auto;
+    background: url(images/bg-triangle.png) no-repeat;
+}
+section .content1 {
+    height: 550px;
+   /* background-color: yellow;*/
+    background: url(images/triangles.png) no-repeat 124px 142px;
+    position: relative; /*자식요소의 기준 위치*/
+}
+section .content1 h2 {
+    font-size: 30px;
+    position: absolute;
+    right: 184px;
+    top: 150px;
+}
+section .content1 h2 a {
+    color: white;
+}
+
+section .content1 .text-box {
+    width: 230px;
+    font-size: 13px;
+    position: absolute;
+    right: 26px;
+    bottom: 26px;
+}
+section .content1 .text-box p {
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+section .content1 .text-box p:first-child {
+    font-size: 16px;
+    font-weight: bold;
+    color: greenyellow;
+}
+section .content1 .text-box p a {
+    color: lightpink;
+}
+section .content1 .text-box p a:hover {
+    background-color: lightpink;
+    color: black;
+    font-weight: bold;
+}
+
+section .content2 {
+    border-top: 1px solid #eee;
+}
+section .content2 h2 {
+    padding: 10px 0 10px 8px;
+    font-size: 24px;
+}
+section .content2 .box {
+    width: 220px;
+    float: left;
+    margin: 0 10px;
+}
+section .content2 .box p {
+    font-size: 13px;
+    padding: 10px 0;
+    /*border-bottom: 1px solid #eee;*/
+    border-top: 1px solid #eee;
+}
+/*section .content2 .box p:last-child {
+    border-bottom: 0;
+}*/
+section .content2 .box p:nth-child(2) {
+    border-top: 0;
+}
+
+footer {
+    clear: both;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+    padding: 10px 0;
+    margin-top: 400px;
+}
+footer p {
+    width: 960px;
+    /*background-color: lightcoral;*/
+    margin: 0 auto;
+    font-size: 12px;
+    text-align: right;
+}
+footer p a {
+    color: silver;
+}
+footer p a:hover {
+    text-decoration: underline;
+    color: greenyellow;
+}
+
+
+
+
+
+
+
+

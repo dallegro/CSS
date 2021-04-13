@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>08_font_rem</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-size: 100%;
+        }
+
+        p {
+            font-size: 5rem;
+            /*font-size: 5em;*/
+        }
+
+        p span {
+            font-size: 5rem;
+        }
+
+        /*
+        rem 단위는 하위 브라우저에서 작동하지 않는 문제가 있음
+        따라서 px단위를 사용해서 값을 입력하고, 바로 이어서 rem 단위를 사용해서 값을 입력하고, 바로 이어서 rem 단위를 사용해서 값을 입력한다 
+        
+        예시 ) font-size: 32px;
+        font-size: 2rem;
+        */
+    </style>
+</head>
+
+<body>
+    <p>rem 단위!
+        <span>rem단위!</span>
+    </p>
+</body>
+
+</html>

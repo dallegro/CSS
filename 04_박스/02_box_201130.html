@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>02_box</title>
+	
+	<style>
+		body {
+			margin-bottom: 300px;
+		}
+		h1 {
+			color: indianred;
+		}
+		
+		/*overflow*/
+		.div1 {
+			width: 200px;
+			height: 80px;
+			background-color: lightblue;
+			margin-bottom: 20px;
+		}
+		.hidden {
+			overflow: hidden;
+		}
+		.scroll {
+			overflow: scroll;
+		}
+		.auto {
+			overflow: auto;
+		}
+		
+		
+		
+	
+	
+	</style>
+</head>
+<body>
+	<h1>overflow:hidden, scroll, auto</h1>
+	<div class="div1 hidden">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</div>
+	
+	<div class="div1 scroll">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</div>
+	
+	<div class="div1 auto">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting.</div>
+	
+	
+	<h1>border-(width/style/color)</h1>
+	<p>border-width : top right bottom left;</p>
+	<p>border-style : top right bottom left;</p>
+	<p>border-color : top right bottom left;</p>
+	
+	<p class="border">border : width style color;</p>
+	
+	<h1>border-style</h1>
+	<p class="border2 solid">solid</p>
+	<p class="border2 dotted">dotted</p>
+	<p class="border2 dashed">dashed</p>
+	<p class="border2 double">double</p>
+	<p class="border2 ridge">ridge</p>
+	<p class="border2 groove">groove</p>
+	<p class="border2 inset">inset</p>
+	<p class="border2 outset">outset</p>
+	
+	<style>
+		.border {
+			border : 3px solid blue;
+			border-width: 20px 10px 50px 8px;
+			border-style: dashed dotted solid double;
+			border-color: red blue green orange;
+		}
+		
+		.border2 {
+			border: 4px #f00;
+		}
+		.solid {border-style: solid;}
+		.dotted {border-style: dotted;}
+		.dashed {border-style: dashed;}
+		.double {border-style: double;}
+		.ridge {border-style: ridge;}
+		.groove {border-style: groove;}
+		.inset {border-style: inset;}
+		.outset {border-style: outset;}
+	
+	
+	</style>
+	
+	
+	<h1>padding</h1>
+	<p class="bg padding1">padding:50px; (네 방향 모두 50px)</p>
+	<p class="bg padding2">padding:20px 40px; (위/아래:20px, 좌/우 40px)</p>
+	<p class="bg padding3">padding:20px 40px 10px; (위:20px, 좌/우 40px, 아래:10px)</p>
+	<p class="bg padding4">padding:20px 10px 30px 5px; (위/오른쪽/아래/왼쪽)</p>
+	
+	<style>
+		.bg {
+			background-color: yellow;
+			color: blue;
+		}
+		.padding1 {
+			padding:50px;
+		}
+		.padding2 {
+			padding:20px 40px;
+		}
+		.padding3 {
+			padding:20px 40px 10px;
+		}
+		.padding4 {
+			padding:20px 10px 30px 5px;
+		}
+	
+	
+	</style>
+	
+	<h1>margin</h1>
+	
+	<h2 class="center">center</h2>
+	
+	<p class="margin1">아날로그(Analog) 신디사이저는 종종 디지털(Digital) 신디사이저보다 '따뜻한' 소리가 난다고 한다.</p>
+	
+	<p class="margin2">아날로그(Analog) 신디사이저는 종종 디지털(Digital) 신디사이저보다 '따뜻한' 소리가 난다고 한다.</p>
+	
+	<p class="margin3">아날로그(Analog) 신디사이저는 종종 디지털(Digital) 신디사이저보다 '따뜻한' 소리가 난다고 한다.</p>
+	
+	<style>
+		.center {
+			text-align: center;
+			border-bottom: 2px solid lightgray;
+			width: 70%;
+			margin: 0 auto;
+		}
+		.margin1 {
+			width: 200px;
+			border: 1px solid blue;
+			padding: 10px;
+		}
+		.margin2 {
+			width: 200px;
+			border: 1px solid blue;
+			padding: 10px;
+			margin: 50px;
+		}
+		.margin3 {
+			width: 200px;
+			border: 1px solid blue;
+			padding: 10px;
+			margin: 20px auto;
+			/*margin: 20px auto 50px;
+			margin: 20px auto 20px auto;*/
+		}
+		
+	
+	
+	
+	</style>
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

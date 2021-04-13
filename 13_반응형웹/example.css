@@ -1,0 +1,213 @@
+@charset 'utf-8';
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+/**PC****/
+#container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* SECTION1 */
+.section1
+}
+
+div.txt_wrap {}
+
+.txt_wrap > h1 {
+    color: dodgerblue;
+    margin: 30px 0;
+
+}
+
+.txt_wrap > p {
+    font-size: 0.9em;
+    color: dimgray;
+    margin-bottom: 40px;
+    letter-spacing: 1.1px;
+}
+
+div.list_wrap {
+    margin-left: 15px;
+}
+
+div.list_wrap ul {
+    margin: 10px 0;
+    float: left;
+    list-style: url(images/bu_square.gif);
+    color: #444;
+    letter-spacing: -1.1px;
+}
+
+div.list_wrap ul:last-child {
+    margin-left: 50px;
+}
+
+div.list_wrap ul li {
+    line-height: 35px;
+}
+
+/* //SECTION1 */
+
+
+/* SECTION2 */
+.section2 {
+    clear: both;
+    width: 100%;
+    background-color: #eee;
+    padding: 60px 50px 60px 50px;
+    box-sizing: border-box;
+}
+
+/* FORM */
+
+form {
+    width: 40%;
+    display: block;
+    margin: 0 auto;
+    /*outline: 5px solid purple;*/
+    text-align: center;
+
+}
+
+form #formSelect {
+    width: 119px;
+    float: left;
+    padding: 15px 10px 15px;
+    border: 3px solid green;
+    color: green;
+
+}
+
+form #formSelect option {}
+
+#searchBox {
+    float: left;
+    position: relative;
+    margin-left: 5px;
+
+    color: green;
+}
+
+#searchBox input {
+    width: 280px;
+    padding: 16px 10px 16px;
+    border: 3px solid green;
+    background: url(images/btn_search.gif) no-repeat;
+    background-position: 95% center;
+    background-color: #fff;
+}
+
+input::placeholder {
+    color: green;
+}
+
+#searchBox img {
+
+    position: absolute;
+    bottom: 0;
+    margin-left: 10px;
+
+}
+
+.search_word {
+    clear: both;
+    padding-top: 30px;
+}
+
+.search_word .first_word {
+    font-weight: bold;
+    font-size: 1em;
+    margin-right: 5px;
+}
+
+.search_word span {
+    font-size: 0.8em;
+    letter-spacing: -0.5px;
+}
+
+/* //FORM */
+
+/* //SECTION2 */
+
+
+
+/**태블릿****/
+@media (min-width:321px) and (max-width:768px) {
+    #container {
+        width: 100%;
+    }
+
+    div.list_wrap ul {
+        margin: 0;
+        float: none;
+    }
+
+    div.list_wrap ul:last-child {
+        margin-left: 0;
+        margin-bottom: 30px;
+    }
+    .section2 {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    form {
+        width: 100%;
+        /*outline: 5px solid purple;*/
+        display: block;
+        height: 250px;
+        position: relative;
+
+    }
+
+    form #formSelect {
+        width: 100%;
+        float: none;
+    }
+
+    #searchBox {
+        float: none;
+        margin-top: 5px;
+        margin-left: 0;
+    }
+
+    #searchBox input {
+        position: absolute;
+        left: 0;
+        width: 88%;
+    }
+    #searchBox img {
+        width: 6.5%;
+        bottom: -49px;
+        right: 0;
+        margin-left: 10px;
+
+    }
+    .search_word {
+        position: absolute;
+        /*outline: 6px solid red;*/
+        padding-top: 0;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .search_word .first_word {
+        display: block;
+        margin-bottom: 30px;
+        letter-spacing: 1.1px;
+        margin-right: 0;
+    }
+
+    .search_word span {
+        font-size: 1em;
+        margin-left: 5px;
+        letter-spacing: -0.5px;
+    }
+}

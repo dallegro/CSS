@@ -1,0 +1,233 @@
+@charset 'utf-8';
+
+/*RESET*/
+* {
+    margin: 0;
+    padding: 0;
+}
+ul,li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(images/bg_body.png);
+}
+.wrap {
+    width: 1200px;
+    /*background-color: greenyellow;*/
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+header {
+    width: 210px;
+    background-image: url(images/bg_head.jpg);
+    height: 848px;
+    background-size: 100% 100%;
+    float: left;
+    padding: 50px 40px 0 40px;
+    box-sizing: border-box;
+}
+header h1 a, nav ul li a{
+    background-image: url(images/bg_gnb.png);
+    display: block;
+    /*text-indent: -9999px;*/
+    text-indent: -9999px;
+}
+
+nav {
+    margin-top: 50px;
+}
+nav ul li {
+    margin: 20px auto;
+    /*outline: 2px solid yellow;*/
+}
+nav ul li a{
+    padding: 10px 0;
+}
+
+/*nav 메뉴 위치조절*/
+nav ul li.history a {
+    background-position: -40px -40px;
+}
+nav ul li.history a:hover {
+    background-position: -250px -40px;
+}
+
+nav ul li.innovation a {
+    background-position: -40px -110px;
+}
+nav ul li.innovation a:hover {
+    background-position: -250px -110px;
+}
+
+nav ul li.new a {
+    background-position: -40px -182px;
+}
+nav ul li.new a:hover {
+    background-position: -250px -182px;
+}
+
+nav ul li.pattern a {
+    background-position: -40px -254px;
+}
+nav ul li.pattern a:hover {
+    background-position: -250px -254px;
+}
+
+nav ul li.event a {
+    background-position: -40px -316px;
+}
+nav ul li.event a:hover {
+    background-position: -250px -316px;
+}
+
+
+
+section {
+    width: 960px;
+    height: 848px;
+    background-image: url(images/bg_main.gif);
+    float: right;
+    position: relative;
+}
+
+section a {
+   /* font-size: 0;*/
+    text-indent: -9999px;
+    display: block;
+    position: absolute;
+}
+section a.con_book {
+    width: 296px;
+    height: 320px;
+    background-image: url(images/img_main01.png);
+    transition: all 0.5s;
+}
+section a.con_book:hover {
+    background-position: right;
+}
+
+section a.con_history {
+    width: 295px;
+    height: 314px;
+    background-image: url(images/img_main02.png);
+    right: 0;
+    top: 267px;
+    transition: all 0.5s;
+}
+section a.con_history:hover {
+    background-position: right;
+}
+
+section a.con_movie {
+    width: 296px;
+    height: 222px;
+    background-image: url(images/img_main03.png);
+    bottom: 120px;
+    transition: all 0.5s;
+}
+section a.con_movie:hover {
+    background-position: right;
+}
+
+section a.con_inno {
+    width: 369px;
+    height: 120px;
+    background-image: url(images/img_main04.png);
+    bottom: 0;
+    left: 296px;
+    transition: all 0.5s;
+}
+section a.con_inno:hover {
+    background-position: right;
+}
+
+section a.con_event {
+    background-image: url(images/img_main05.png);
+    width: 160px;
+    height: 268px;
+    bottom: 0;
+    right: 136px;
+    transition: all 0.5s;
+}
+section a.con_event:hover {
+    background-position: right;
+}
+
+
+footer {
+    /*clear: both;*/
+    width: 150px;
+    position: absolute;
+    left: 30px;
+    top: 640px;
+    text-indent: -9999px;
+}
+footer address {
+    background-image: url(images/bg_footer.png);
+    background-repeat: no-repeat;
+    height: 28px;
+    margin-bottom: 20px;
+}
+footer p {
+    background-image: url(images/bg_footer.png);
+    background-repeat: no-repeat;
+    background-position: 0 50%;
+    height: 40px;
+    margin-bottom: 10px;
+}
+footer .sns a {
+    background-image: url(images/bg_footer.png);
+    width: 36px;
+    height: 36px;
+    display: block;
+    float: left;
+}
+footer .sns a:first-child {
+    margin-right: 10px;
+    background-position: 0px 36px;
+}
+footer .sns a:last-child {
+    background-position: -46px 36px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

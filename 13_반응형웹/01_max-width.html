@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>01_max-width</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+    <style>
+        body {
+            background: url(images/bg0.jpg)no-repeat fixed;
+            background-size: cover;
+        }
+
+        @media screen and(max-width:1024px) {
+            body {
+                background: url(images/bg1.jpg) no-repeat fixed;
+                background-size: cover;
+            }
+        }
+
+        @media all and(max-width:768px) {
+            body {
+                background: url(images/bg2.jpg) no-repeat fixed;
+                background-size: cover;
+            }
+        }
+        @media all and(max-width:360px){
+            body{
+                background: url(images/bg3.jpg)no-repeat fixed;
+                background-size: cover;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+
+</html>

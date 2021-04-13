@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(images/backdrop.gif);
+        }
+
+        header {
+            margin: 30px auto 50px;
+            /*text-align: center;*/
+        }
+
+        header img {
+            display: block;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        header p {
+            text-align: center;
+        }
+
+        .box {/*
+            width: 800px;
+            border: 1px solid red;
+            margin: 0 auto;*/
+            text-align: center;
+        }
+
+        figure {
+            width: 210px;
+            padding: 10px;
+            background-color: gray;
+            display: inline-block;
+            
+            margin-bottom: 20px;
+            
+        }
+        figcaption {
+            font-size: 14px;
+            color: white;
+        }
+        figcaption img {
+            padding-right: 6px;
+            
+            vertical-align: bottom;
+        }
+
+        /*인라인요소가 없으면 margin 0 auto가 먹지않는다*/
+
+        /*header .title {
+            background: url(images/title.gif) no-repeat
+            center;
+            height: 130px;
+        }*/
+    </style>
+</head>
+
+<body>
+    <header>
+        <!--<div class="title"></div>-->
+        <img src="images/title.gif" alt="Galerie Botanique">
+        <p>개최된 컬렉션에 선택되 고풍스러운 식물 이미지는 다음과 같다.</p>
+    </header>
+    <section>
+        <div class="box">
+            <figure>
+                <img src="images/print-01.jpg">
+                <figcaption><img src="images/icon.png" alt="icon">
+                    해바라기(Helianthus)</figcaption>
+            </figure>
+            <figure>
+                <img src="images/print-05.jpg">
+                <figcaption><img src="images/icon.png" alt="icon">
+                    시계꽃(passiflora)</figcaption>
+            </figure>
+            <figure>
+                <img src="images/print-03.jpg">
+                <figcaption><img src="images/icon.png" alt="icon">
+                    닉토칼로스(Nyctocalos)</figcaption>
+            </figure>
+            <figure>
+                <img src="images/print-04.jpg">
+                <figcaption><img src="images/icon.png" alt="icon">
+                    폴리안테스(Polianthes)</figcaption>
+            </figure>
+            <figure>
+                <img src="images/print-05.jpg">
+                <figcaption><img src="images/icon.png" alt="icon">
+                    무화과나무(Ficus)</figcaption>
+            </figure>
+            <figure>
+                <img src="images/print-06.jpg">
+                <figcaption><img src="images/icon.png" alt="icon">
+                    덴드로비움(Dendrobium)</figcaption>
+            </figure>
+
+        </div>
+    </section>
+</body>
+
+</html>

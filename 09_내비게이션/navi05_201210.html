@@ -1,0 +1,98 @@
+<!DOCTYPE>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>navi05</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul,
+        ol,
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+
+        #gnb {
+            width: 900px;
+            height: 50px;
+            margin: 30px auto 0;
+            background-color: lightskyblue;
+        }
+
+        #gnb li {
+            width: 150px;
+            float: left;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        /*형제선택자: (첫번째)li 요소 다음에 오는 형제 요소들에게 적용
+        즉, 첫번째 li는 border-left를 가지지 않음*/
+        #gnb li~li {
+            border-left: 1px solid #777;
+        }
+
+        #gnb a {
+            display: block;
+            line-height: 50px;
+            color: #333;
+            text-shadow: 1px 1px 0 gray;
+            background: linear-gradient(to bottom, #6d6d6d, #f0f0f0);
+            /*background: linear-gradient(-30deg,red,yellow);*/
+            /*background:linear-gradient(to top,blue,yellow 30%, pink 60%,black);*/
+            /*CSS 그라데이션
+            
+            background :
+            linear-gradient (방향, 시작색, 끝색)
+            linear-gradient (각도, 색1, 색2, .....)
+            linear-gradient (방향, 시작색%, 중간색%, 끝색%)
+            
+            
+            방향: to top, to bottom, to right, to left
+            각도 : 기울임각도(단위:deg)
+            
+            */
+        }
+        #gnb li:first-child a{
+            border-radius: 8px 0 0 8px;
+        }
+        #gnb li:last-child a{
+            border-radius: 0 8px 8px 0;
+        }
+        #gnb li:hover a{
+            background: linear-gradient(to top,#6d6d6d,#f0f0f0);
+            color: #fff;
+            text-shadow: 0 1px 0 #777;
+        }
+    </style>
+
+</head>
+
+<body>
+    <nav id="gnb">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">Mobile</a></li>
+            <li><a href="#">Profile</a></li>
+
+        </ul>
+    </nav>
+
+</body>
+
+</html>

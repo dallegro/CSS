@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>06_background-clip</title>
+    <style>
+        div{
+            border: 5px dotted purple;
+            width: 400px;
+            padding: 50px;
+            text-align: center;
+            background-color: yellow;
+            background-clip: border-box;
+            /*
+            border-box : 박스 모델의 가장 외곽인 테두리(border)까지 적용
+            padding-box : 테두리를 뺀 패딩 범위까지 적용
+            content-box : 내용 부분에만 적용
+            */
+        }
+        h1 {
+            font-size: 60px;
+            background-image: url(images/img02.jpg);
+            color: transparent;
+            -webkit-background-clip: text;
+            transition: all 0.7s;
+        }
+        h1:hover {
+            background-position: left bottom;
+        }/*hover 마우스를 올렸을때*/
+        
+        
+        
+        
+    </style>
+</head>
+<body>
+   <div>
+       붕어빵 먹고싶어!!
+   </div>
+   <h1>오마이걸 <br> 다선번째 계절!!</h1>
+   
+    
+</body>
+</html>

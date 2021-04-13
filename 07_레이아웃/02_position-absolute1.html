@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>02_position-absolute</title>
+    <style>
+        .box1, .box2 {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            
+            /*별도의 좌표값이 없으면 보통 left 0 top 0 자리잡음*
+            relative 상대값 - 어떤 기준이냐에 따라 변경가능 
+            absolute 절대갑 - 주어진 좌표 안에서 여러개가 겹쳐있어도 계속 쌓여있는것 */
+            left: 100px;
+            top: 100px;
+        
+        }
+        .box1 {
+            background-color: indianred;
+        }
+        .box2 {
+            background-color: darkseagreen;
+        }
+        .parent {
+            width: 400px;
+            height: 300px;
+            border: 1px solid #000;
+            position: relative;/*기준!!!!*/
+            left: 200px;
+            top: 200px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="parent">
+        <div class="box2"></div>
+    </div>
+</body>
+
+</html>

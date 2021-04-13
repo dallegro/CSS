@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>04_z-index</title>
+	<style>
+		/*
+		z-index 값이 작을수록 아래에 쌓이고 z-index 값이 클수록 위에 쌓인다.
+		*/
+		.box {
+			width: 100px;
+			height: 100px;
+			border: 1px solid #000;
+			font-size: 26px;
+			position: absolute;
+		}
+		.b1 {
+			background-color: red;
+			left: 50px;
+			top: 50px;
+			z-index: 4;
+		}
+		.b2 {
+			background-color: greenyellow;
+			left: 110px;
+			top: 70px;
+			z-index: 999;
+		}
+		.b3 {
+			background-color: skyblue;
+			left: 70px;
+			top: 110px;
+			z-index: 99;
+		}
+	
+	
+	
+	</style>
+</head>
+<body>
+	<div class="box b1">1</div>
+	<div class="box b2">2</div>
+	<div class="box b3">3</div>
+	
+	
+</body>
+</html>

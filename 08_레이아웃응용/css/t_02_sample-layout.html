@@ -1,0 +1,49 @@
+<!DOCTYPE>
+<html lang="ko">
+    
+<head>
+    <meta charset="utf-8">
+    <title>02_sample-layout</title>
+    <link rel="stylesheet" href="t_02_sample-layout.css">
+</head>
+<body>
+    
+    <header>
+        <p>header</p>
+    </header>
+    <section>
+        <article class="main">
+            <p>Mainbanner</p>
+        </article>
+        <article class="box-wrap clearfix">
+           <!--
+           float를 해제하는 가상 선택자.
+           자식을 감싸고있는 부모에게 적용해야함
+           html -> clearfix: 
+           css -> .clearfix:after/
+           after~> 이게 끝난 후에 적용!
+           before~> 이 전에 적용!
+           -->
+            <div class="box1">contant1</div>
+            <div class="box2">contant2</div>
+            <div class="box3">contant3</div>
+            <div class="box4">contant4</div>
+            <div class="box5">contant5</div>
+            <div class="box6">contant6</div>
+            <div class="box7">contant7</div>
+            <div class="box8">contant8</div>
+        </article>
+        <article class="banner">
+            <p>article3</p>
+        </article>
+        <article class="site">
+        <p>Family site</p>
+        </article>
+        
+    </section>
+    <footer>
+        <p>&copy;copyright2017</p>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>08_example</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: url(images/pattern_gray.png);
+        }
+/*
+        .faq {
+            width: 100%;
+            height: 70px;
+            background-image: url(images/faq_topimg.jpg);
+            background-repeat: no-repeat;
+            background-position: 50% 30%;
+            border-top: 1px solid black;
+            border-bottom: 2px solid black;
+            background: white
+            url(images/faq_topimg.jpg) no-repeat 50% 30%;
+            margin: 60px 0;
+            border: 1px solid #000;
+            border-bottom: 3px solid #000;
+            box-sizing: border-box;
+        }
+        */
+        /*img태그를 사용한 faq*/
+        .faq2 {
+            width: 100%;
+            margin: 20px 0 40px;
+            background-color: white;
+            padding: 20px 0 30px;
+            border-top: 1px solid #000;
+            border-bottom: 2px solid #000;
+            text-align: center;
+        }
+        .box {
+            width: 500px;
+            height: 200px;
+            background-color: dimgray;
+            border: 3px solid #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin: 0 auto;/*박스 가운데 정렬*/
+        }
+        .box h2 {
+            color: white;
+            padding: 12px;/*
+            border-bottom: 1px dashed #fff;*/
+        }
+        .box hr {
+            border-style: dashed;
+            color: #fff;
+            width: 94%;
+            margin: 0 auto;
+        }
+        p{
+            color: white;
+            font-size: 12px;
+            padding: 10px 12px;
+        }
+        
+        .q {
+            background-color: black;
+            border-radius: 6px;
+            font-weight: bold;
+           /* margin-top: 10px;*/
+            width: 94%;
+            box-sizing: border-box;
+            margin: 10 auto 0;;
+            margin: 10px auto 0 auto;
+        }
+        .box .q>span {
+            color: greenyellow;
+            font-weight: bold;
+        }
+        .a {
+            width: 94%;
+            box-sizing: border-box;
+            margin: 0 auto;
+            text-indent: 3%;
+            /*wodr-break:keep-all;*/
+            line-height: 1.6;/*단위가 없을때는 비율대로 늘어지는것/ px는 글씨기준으로 늘어지는것*/
+        }
+        .box .a>span {
+            color: yellow;
+            font-weight: bold;
+            }
+        
+    </style>
+</head>
+
+<body>
+   <!-- <div class="faq"></div>-->
+    <div class="faq2">
+        <img src="images/faq_topimg.jpg" alt="faq게시판안내">
+    </div>
+    <div class="box">
+        <h2>3DS MAX에서 에러 메시지</h2>
+        <hr>
+        <p class="q"><b><span>Q...</span> Missing Map Files의 에러 메시지가 나옵니다.</b></p>
+        <p class="a"><span>A...</span> 위와 같은 에러 메시지는 맥스 3.1 풀버전을 설치하시지 않으셨기 때문입니다. 맥스 3.1 setup 시에 custom 옵션에서 모든 항목을 체크하시면 door와 windows라는 플러그인이 설치가 됩니다.</p>
+        .
+    </div>
+
+</body>
+
+</html>

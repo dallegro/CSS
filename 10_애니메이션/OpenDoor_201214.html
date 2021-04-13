@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Door</title>
+    
+    <style>
+        body {
+            background-color: darkseagreen;
+        }
+        
+        /*전체부모*/
+        .gate {
+            width: 200px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: #900;
+            position: relative;
+            top: 100px;
+        }
+        
+        /*문이 열렸을 때 뚫린 부분 - 실제 내용이 보여지는 부분*/
+        .frame {
+            width: 160px;
+            height: 280px;
+            background-color: yellow; /*공간확인!!!*/
+            margin: 0 auto;
+            position: relative;
+            top: 20px;
+            /*background: url(images/seashore.jpg) no-repeat center;
+            background-size: auto 100%;*/
+            background: url(images/seashore.jpg) no-repeat center/auto 100%;    
+            
+        }
+        
+        /*엘사*/
+        .elsa {
+            position: absolute;
+            /*frame 크기와 동일하게 영역 설정*/
+            width: 160px;
+            height: 280px;
+            /*outline: 3px solid lime;*/
+        }
+        .elsa>img {
+            position: absolute;
+            top: 10px;
+            right: -180px;
+            transform: rotate(0deg) scale(.5);
+            /*transform: rotate(-30deg) scale(1);*/
+            
+            animation: elsa 2s ease-in-out infinite alternate;
+            /*엘사가 커졌다 작아졌다 해야하므로 alternate 설정*/
+        }
+        
+        /*문짝*/
+        .door {
+            width: 160px;
+            height: 280px;
+            background-color: #c90;
+            position: relative;
+        }
+        
+        /*손잡이*/
+        .handle {
+            width: 20px;
+            height: 20px;
+            background-color: #00f;
+            border-radius: 50%;
+            position: absolute;
+            right: 10px;
+            top: 130px;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        /*키프레임 설정*/
+        @keyframes elsa {
+            to {
+                transform: rotate(-30deg) scale(1);
+            }
+        }
+        
+        
+        
+    
+    
+    </style>
+</head>
+<body>
+    <!--문 전체부모-->
+    <div class="gate">
+        <!--실제 내용이 보여지는 부분-->
+        <div class="frame">
+            <!--엘사-->
+            <div class="elsa">
+                <img src="images/elsa.png" alt="엘사">
+            </div>
+            
+            <!--문짝-->
+            <div class="door">
+                <!--손잡이-->
+                <div class="handle"></div>
+            </div>
+            
+        </div>        
+    </div>
+</body>
+</html>
